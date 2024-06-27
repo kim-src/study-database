@@ -1,3 +1,5 @@
+drop table if exists members;
+
 create table members (
 	mem_id		varchar(100)	not null comment '사용자 아이디',
 	mem_password varchar(100)	not null comment '사용자 비밀번호',
@@ -21,8 +23,8 @@ insert into members(mem_id, mem_password, mem_name,
 insert into members(mem_id, mem_password, mem_name,
 					mem_birth, mem_gender, mem_email,
 					mem_phone, mem_addr, mem_addr_detail)
-			values ('rlackdtjd', 'rlackdtjd1!', '회원', 941104, '남자',
-					'triumkim@naver.com', '010-7247-2551',
-					'경상남도 진주시', '초전동');
+			values ('rlackdtjd', 'rlackdtjd1!', '회원', 950505, '남자',
+					'kong@naver.com', '010-1234-1234',
+					'서울시 강동구', '천호동');
 			
 select * from members;

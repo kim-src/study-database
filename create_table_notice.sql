@@ -1,4 +1,3 @@
-
 drop table if exists notice;
 create table notice(
 
@@ -15,3 +14,9 @@ create table notice(
 );
 
 select * from notice;
+
+create table notice_file(
+
+	file_id		int				auto_increment	comment	'파일 번호',
+
+);
